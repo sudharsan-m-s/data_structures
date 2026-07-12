@@ -4,7 +4,8 @@
 struct Node {
     int data;
     struct Node* next;
-}*head;
+}
+*head;
 
 void display()
 {
@@ -42,6 +43,37 @@ void inslast(int val)
     display();
 }
 
+void delete(int val)
+{
+    struct Node* temp = head-> next, *prev;
+    while(temp->data != val && temp->next != NULL)
+    {
+        prev = temp;
+        temp = temp-> next;
+    }
+    if (temp->data== val){
+        prev -> next = temp-> next;
+        free(temp);
+    }
+    else{
+        printf("Element not found!");
+    }
+    display();
+}
+
+void search(int val)
+{
+    struct Node* temp = head -> next;
+    while(temp->data != val && temp->next != NULL){
+        temp = temp -> next;
+    }
+    if(temp->data == val){
+        printf("Element found ! \n",temp);
+    }else{
+        printf("Element not found!");
+    }
+}
+
 
 int main() {
     head = (struct Node*)malloc(sizeof(struct Node));
@@ -58,6 +90,11 @@ int main() {
     insfirst(100);
     printf("\n");
     inslast(200);
+    printf("\n");
+    delete(30);
+    printf("\n");
+    search(10);
+    search(1000);
 
     
     return 0;
