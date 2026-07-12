@@ -45,7 +45,7 @@ void delete(int value) {
 
     for (i = pos; i < n - 1; i++)
 
-        array[i] = array[i + 1];
+git        array[i] = array[i + 1];
 
     n--;
 }
@@ -100,7 +100,7 @@ int main() {
             case 2:
                 printf("Enter value to delete: ");
                 scanf("%d", &value);
-                del(value);
+                delete(value);
                 break;
 
             case 3:
