@@ -1,142 +1,65 @@
 # Data Structures in C
 
-A collection of Data Structures programs implemented in **C**, created as part of my engineering coursework and practice. This repository contains fundamental data structure implementations with simple, well-commented code for learning and reference.
+This repository contains my implementations of fundamental **Data Structures in C** as part of my learning and engineering coursework. The programs are written with a focus on understanding the core concepts and operations of each data structure.
 
-## 📚 Topics Covered
+## 📌 Current Progress
 
-### Arrays
+### ✅ Array Implementation
 
-* Array Operations
+* Array Traversal
 * Insertion
 * Deletion
 * Searching
-* Traversal
 
-### Linked Lists
+### ✅ Linked List Implementation
 
 * Singly Linked List
 * Circular Linked List
-* Doubly Linked List
 * Insertion Operations
 * Deletion Operations
-* Traversal
+* Display/Traversal
 
-### Stacks
-
-* Stack using Arrays
-* Stack using Linked List
-* Push
-* Pop
-* Peek
-
-### Queues
-
-* Simple Queue
-* Circular Queue
-* Priority Queue
-* Queue using Linked List
-
-### Trees
-
-* Binary Tree
-* Binary Search Tree (BST)
-* Tree Traversals (Preorder, Inorder, Postorder)
-
-### Graphs
-
-* Graph Representation
-* Breadth-First Search (BFS)
-* Depth-First Search (DFS)
-
-### Searching Algorithms
-
-* Linear Search
-* Binary Search
-
-### Sorting Algorithms
-
-* Bubble Sort
-* Selection Sort
-* Insertion Sort
-* Merge Sort
-* Quick Sort
-
-## 🛠️ Technologies Used
+## 🛠️ Language & Tools
 
 * **Language:** C
 * **Compiler:** GCC / MinGW
-* **Editor:** Visual Studio Code
+* **IDE:** Visual Studio Code
 
 ## ▶️ How to Run
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/data-structures.git
-```
-
-2. Navigate to the repository:
-
-```bash
-cd data-structures
-```
-
-3. Compile any program:
+Compile the program:
 
 ```bash
 gcc filename.c -o output
 ```
 
-4. Run the executable:
+Run the executable:
+
+**Linux/macOS**
 
 ```bash
 ./output
 ```
 
-**Windows (Command Prompt/PowerShell):**
+**Windows**
 
 ```bash
 output.exe
 ```
 
-## 📂 Repository Structure
+## 🚀 Upcoming Implementations
 
-```text
-Data-Structures/
-│
-├── Arrays/
-├── Linked Lists/
-├── Stacks/
-├── Queues/
-├── Trees/
-├── Graphs/
-├── Searching/
-├── Sorting/
-└── README.md
-```
+* Stack
+* Queue
+* Tree
+* Graph
+* Searching Algorithms
+* Sorting Algorithms
 
-## 🎯 Objectives
+## 🎯 Purpose
 
-* Understand core data structures.
-* Learn algorithm implementation in C.
-* Strengthen problem-solving skills.
-* Build a strong foundation for technical interviews.
-
-## 🚀 Future Additions
-
-* Hash Tables
-* Heaps
-* AVL Trees
-* Red-Black Trees
-* Dynamic Programming
-* Practice Problems with Solutions
+This repository documents my progress in learning Data Structures by implementing each concept from scratch in C.
 
 ## 👨‍💻 Author
 
 **Sudharsan M.S.**
-
-Computer Science & Engineering Student
-
----
-
-⭐ If you find this repository helpful, consider giving it a star!
