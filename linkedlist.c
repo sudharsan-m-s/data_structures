@@ -19,6 +19,7 @@ void display()
 
     temp = temp->next;
 }
+printf("\n");
 }
 
 void insfirst(int val)
@@ -58,12 +59,12 @@ void insspecific(int s,int val)
         temp ->next = newnode;
     }
     else{
-        printf("Element not found!");
+        printf("Element not found! \n");
     }
     display();
 }
 
-void delete(int val)
+void del(int val)
 {
     struct Node* temp = head-> next, *prev;
     while(temp->data != val && temp->next != NULL)
@@ -76,7 +77,7 @@ void delete(int val)
         free(temp);
     }
     else{
-        printf("Element not found!");
+        printf("Element not found! \n");
     }
     display();
 }
@@ -90,12 +91,14 @@ void search(int val)
     if(temp->data == val){
         printf("Element found ! \n",temp);
     }else{
-        printf("Element not found!");
+        printf("Element not found! \n");
     }
 }
 
 
 int main() {
+    int choice = 0, s , val;
+    //linkedlist declaration
     head = (struct Node*)malloc(sizeof(struct Node));
     struct Node* first = (struct Node*)malloc(sizeof(struct Node));
     head->next = first;
@@ -107,15 +110,57 @@ int main() {
     second->next = third;
     third->data = 30;
     third->next =  NULL;
-    insfirst(100);
-    printf("\n");
-    inslast(200);
-    printf("\n");
-    delete(30);
-    printf("\n");
-    search(10);
-    search(1000);
-    printf("\n");
-    insspecific(20,2000);git
-    return 0;
+
+    // user choice display
+    while(choice != 7){
+    printf("\n1.Insert First\n2.Insert Last\n3.Insert After Specified Element\n4.Delete\n5.Search\n6.Display\n7.Exit\n");
+    printf("Enter your choice : ");
+    scanf("%d",&choice);
+    
+    //switch case
+    switch (choice){
+        case 1:
+        printf("Enter value to be inserted: ");
+        scanf("%d",&val);
+        insfirst(val);
+        break;
+
+        case 2:
+        printf("Enter value to be inserted: ");
+        scanf("%d",&val);
+        inslast(val);
+        break;
+
+        case 3:
+        printf("Enter the specifying element: ");
+        scanf("%d",&s);
+        printf("Enter value to be inserted: ");
+        scanf("%d",&val);
+        insspecific(s,val);
+        break;
+
+        case 4:
+        printf("Enter value to be deleted: ");
+        scanf("%d",&val);
+        del(val);
+
+        break;
+
+        case 5:
+        printf("Enter value to be searched: ");
+        scanf("%d",&val);
+        search(val);
+        break;
+
+        case 6:
+        display();
+        break;
+
+        case 7:
+        break;
+
+        default:
+        printf("Invalid choice..");
+    }
+}
 }
