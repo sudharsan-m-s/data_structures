@@ -43,6 +43,26 @@ void inslast(int val)
     display();
 }
 
+void insspecific(int s,int val)
+{
+    struct Node* newnode = malloc(sizeof(struct Node));
+    newnode ->data = val;
+    struct Node* temp = head -> next;
+    while(temp -> data != s && temp -> next != NULL)
+    {
+        temp = temp -> next;
+    }
+    if (temp-> data == s)
+    {
+        newnode ->next = temp -> next;
+        temp ->next = newnode;
+    }
+    else{
+        printf("Element not found!");
+    }
+    display();
+}
+
 void delete(int val)
 {
     struct Node* temp = head-> next, *prev;
@@ -95,7 +115,7 @@ int main() {
     printf("\n");
     search(10);
     search(1000);
-
-    
+    printf("\n");
+    insspecific(20,2000);git
     return 0;
 }
