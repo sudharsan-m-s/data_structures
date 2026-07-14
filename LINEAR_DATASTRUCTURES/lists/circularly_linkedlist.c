@@ -15,10 +15,11 @@ void display()
         return;
     }
     do
-{
-    printf("%d ->", temp->data);
-    temp = temp->next;
-} while (temp != head->next);
+    {
+        printf("%d ->", temp->data);
+        temp = temp->next;
+    } while (temp != head->next);
+    
 printf("(back to %d)\n",temp->data);
 
 printf("\n");
@@ -44,6 +45,7 @@ void insfirst(int val)
         head->next = newnode;
     }
     printf("\n");
+    display();
 }
 
 void inslast(int val)
@@ -62,8 +64,8 @@ void inslast(int val)
         }
         temp -> next = newnode;
         newnode -> next = head -> next;
-
     }
+    display();
     printf("\n");
 }
 
@@ -80,8 +82,7 @@ int main()
     third -> data = 30;
     second -> next = third;
     third -> next = first;
+    display();
     insfirst(5);
-    display();
-    inslast(35);
-    display();
+    inslast(100);
 }

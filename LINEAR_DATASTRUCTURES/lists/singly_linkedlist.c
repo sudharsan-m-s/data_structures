@@ -14,9 +14,9 @@ void display()
 {
     printf("%d", temp->data);
 
-    if (temp->next != NULL){
+    if (temp->next != NULL)
         printf(" -> ");
-    }
+
     temp = temp->next;
 }
 printf("\n");

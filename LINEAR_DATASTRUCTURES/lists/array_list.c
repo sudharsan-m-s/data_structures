@@ -44,8 +44,7 @@ void delete(int value) {
     }
 
     for (i = pos; i < n - 1; i++)
-
-git        array[i] = array[i + 1];
+       array[i] = array[i + 1];
 
     n--;
 }
