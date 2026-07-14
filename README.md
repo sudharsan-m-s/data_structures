@@ -1,82 +1,125 @@
+<div align="center">
+
 # 📚 Data Structures in C
 
-A comprehensive collection of **Data Structures** implemented in **C**, created as part of my engineering coursework and self-learning journey. This repository focuses on understanding the internal working of each data structure by implementing them from scratch without relying on external libraries.
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00C2FF&center=true&vCenter=true&width=900&lines=Mastering+Data+Structures+using+C;Arrays+%7C+Linked+Lists+%7C+Stacks+%7C+Queues;Building+Strong+Programming+Fundamentals;Learning+One+Concept+at+a+Time"/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C2FF,100:0066FF&height=180&section=header"/>
+
+![Language](https://img.shields.io/badge/Language-C-blue?style=for-the-badge&logo=c)
+![Compiler](https://img.shields.io/badge/Compiler-GCC-success?style=for-the-badge)
+![IDE](https://img.shields.io/badge/IDE-VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode)
+![Git](https://img.shields.io/badge/Version_Control-Git-F05032?style=for-the-badge&logo=git)
+![GitHub](https://img.shields.io/badge/Repository-GitHub-181717?style=for-the-badge&logo=github)
+
+</div>
 
 ---
 
-## 📂 Repository Structure
+## 💡 About
 
-```
-data_structures/
+This repository contains my implementations of **Data Structures in C**, built completely from scratch as part of my Computer Science Engineering journey.
+
+The goal is to strengthen problem-solving skills, understand memory management, master pointers, and build a solid foundation for advanced algorithms.
+
+---
+
+# 📂 Repository Structure
+
+```text
+📦 data_structures
 │
-├── LINEAR_DATASTRUCTURES/
-│   ├── lists/
-│   │   ├── array_list.c
-│   │   ├── singly_linkedlist.c
-│   │   └── circularly_linkedlist.c
+├── 📁 LINEAR_DATASTRUCTURES
 │   │
-│   ├── stacks/
-│   │   └── (Coming Soon)
+│   ├── 📁 lists
+│   │   ├── 📄 array_list.c
+│   │   ├── 📄 singly_linkedlist.c
+│   │   ├── 📄 circularly_linkedlist.c
+│   │   └── 📄 doubly_linkedlist.c (Coming Soon)
 │   │
-│   └── queues/
-│       └── (Coming Soon)
+│   ├── 📁 stacks
+│   │   └── 🚧 Under Development
+│   │
+│   └── 📁 queues
+│       └── 🚧 Under Development
 │
-├── README.md
-└── LICENSE
+├── 📄 README.md
+└── 📄 LICENSE
 ```
 
 ---
 
-## 🚀 Implemented Data Structures
+# 🚀 Implemented Data Structures
 
-### 📌 Linear Data Structures
+## ✅ Arrays
 
-#### ✅ Lists
-
-- Array
-  - Traversal
-  - Insertion
-  - Deletion
-  - Searching
-
-- Singly Linked List
-  - Insertion
-  - Deletion
-  - Traversal
-
-- Circular Linked List
-  - Insertion
-  - Deletion
-  - Traversal
+- Traversal
+- Insertion
+- Deletion
+- Searching
 
 ---
 
-## 🛠 Tech Stack
+## ✅ Linked Lists
 
-- **Language:** C
-- **Compiler:** GCC / MinGW
-- **IDE:** Visual Studio Code
-- **Version Control:** Git & GitHub
+### Singly Linked List
+
+- Insertion
+- Deletion
+- Traversal
+
+### Circular Linked List
+
+- Insertion
+- Deletion
+- Traversal
 
 ---
 
-## ▶️ Compilation
+# 📈 Repository Progress
 
-Compile any source file using GCC:
+| Data Structure | Status |
+|---------------|--------|
+| ✅ Arrays | Completed |
+| ✅ Singly Linked List | Completed |
+| ✅ Circular Linked List | Completed |
+| 🟡 Doubly Linked List | In Progress |
+| 🔜 Stack | Planned |
+| 🔜 Queue | Planned |
+| 🔜 Tree | Planned |
+| 🔜 Graph | Planned |
+| 🔜 Searching Algorithms | Planned |
+| 🔜 Sorting Algorithms | Planned |
+
+---
+
+# 🛠 Tech Stack
+
+| Tool | Usage |
+|------|-------|
+| C | Programming Language |
+| GCC / MinGW | Compiler |
+| Visual Studio Code | IDE |
+| Git | Version Control |
+| GitHub | Repository Hosting |
+
+---
+
+# ▶️ Compile & Run
+
+### Compile
 
 ```bash
 gcc filename.c -o output
 ```
 
-### Run the Program
-
-**Windows**
+### Windows
 
 ```bash
 output.exe
 ```
 
-**Linux/macOS**
+### Linux / macOS
 
 ```bash
 ./output
@@ -84,49 +127,67 @@ output.exe
 
 ---
 
-## 📅 Roadmap
+# 🎯 Learning Goals
 
-### 🔄 Linear Data Structures
+- ✔ Master Data Structures
+- ✔ Improve Pointer Concepts
+- ✔ Understand Dynamic Memory Allocation
+- ✔ Practice Modular Programming
+- ✔ Prepare for Technical Interviews
+- ✔ Build Strong DSA Fundamentals
+
+---
+
+# 📅 Roadmap
+
+## Linear Data Structures
 
 - ✅ Arrays
 - ✅ Singly Linked List
 - ✅ Circular Linked List
-- ⏳ Doubly Linked List
-- ⏳ Stack
-- ⏳ Queue
+- 🟡 Doubly Linked List
+- 🔜 Stack
+- 🔜 Queue
 
-### 🌳 Non-Linear Data Structures
+## Non-Linear Data Structures
 
-- ⏳ Trees
-- ⏳ Binary Search Trees
-- ⏳ AVL Trees
-- ⏳ Graphs
-- ⏳ Heaps
+- 🔜 Trees
+- 🔜 Graphs
+- 🔜 Heaps
 
-### 🔍 Algorithms
+## Algorithms
 
-- ⏳ Searching Algorithms
-- ⏳ Sorting Algorithms
+- 🔜 Sorting
+- 🔜 Searching
 
 ---
 
-## 🎯 Objectives
+# 🌟 Repository Highlights
 
-- Learn every Data Structure from scratch.
-- Understand memory management and pointers in C.
-- Practice clean and modular programming.
-- Build a structured reference repository for future learning.
+- 📚 Beginner Friendly
+- 🧠 Well Commented Code
+- ⚡ Easy to Understand
+- 🔄 Regularly Updated
+- 💻 Pure C Implementations
+
+---
+
+# 🤝 Contributions
+
+Suggestions and improvements are welcome!
+
+If you'd like to improve the repository, feel free to fork it and open a Pull Request.
 
 ---
 
-## 🤝 Contributions
-
-Suggestions and improvements are always welcome. Feel free to fork the repository and create a pull request.
-
----
+<div align="center">
 
 ## 👨‍💻 Author
 
-**Sudharsan M.S.**
+### **Sudharsan M.S.**
 
-⭐ If you found this repository useful, consider giving it a **Star** on GitHub!
+⭐ **If you found this repository helpful, consider giving it a Star!**
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0066FF,100:00C2FF&height=150&section=footer"/>
+
+</div>
