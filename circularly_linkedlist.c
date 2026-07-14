@@ -88,6 +88,25 @@ void insspecific(int s, int val)
         printf("\n");
     }
 }
+void delete(int val)
+{
+    struct Node *temp = head -> next , *prev;
+    while(temp-> next != head -> next && temp-> data != val)
+    {
+        prev = temp;
+        temp = temp -> next;
+    }
+    if (temp-> data == val)
+    {
+        prev -> next = temp -> next;
+        free(temp);
+        display();
+    }
+    else{
+        printf("Element not found!");
+    }
+
+}
 
 int main()
 {
@@ -105,4 +124,5 @@ int main()
     insfirst(5);
     inslast(100);
     insspecific(30,50);
+    delete(100);
 }
