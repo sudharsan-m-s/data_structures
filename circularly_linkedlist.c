@@ -101,6 +101,7 @@ void delete(int val)
         prev -> next = temp -> next;
         free(temp);
         display();
+        printf("\n");
     }
     else{
         printf("Element not found!");
@@ -108,8 +109,27 @@ void delete(int val)
 
 }
 
+void search (int val)
+{
+    struct Node *temp = head -> next;
+    while (temp -> next != head -> next && temp -> data != val)
+    {
+        temp =temp -> next;
+    }
+    if (temp ->data == val)
+    {
+        printf("Element found!");
+        printf("\n");
+    }
+    else{
+        printf("Element not found!");
+        printf("\n");
+    }
+}
+
 int main()
 {
+    int choice = 0, s, val;
     head = malloc(sizeof(struct Node));
     struct Node *first = malloc(sizeof(struct Node));
     first -> data = 10;
@@ -121,8 +141,56 @@ int main()
     third -> data = 30;
     second -> next = third;
     third -> next = first;
-    insfirst(5);
-    inslast(100);
-    insspecific(30,50);
-    delete(100);
+    while (choice != 7)
+    {
+    printf("\n1.Insert First\n2.Insert Last\n3.Insert After Specified Element\n4.Delete\n5.Search\n6.Display\n7.Exit\n");
+    printf("Enter your choice : ");
+    scanf("%d",&choice);
+    
+    switch (choice){
+        case 1:
+        printf("Enter value to be inserted: ");
+        scanf("%d",&val);
+        insfirst(val);
+        break;
+
+        case 2:
+        printf("Enter value to be inserted: ");
+        scanf("%d",&val);
+        inslast(val);
+        break;
+
+        case 3:
+        printf("Enter the specifying element: ");
+        scanf("%d",&s);
+        printf("Enter value to be inserted: ");
+        scanf("%d",&val);
+        insspecific(s,val);
+        break;
+
+        case 4:
+        printf("Enter value to be deleted: ");
+        scanf("%d",&val);
+        delete(val);
+        break;
+
+        case 5:
+        printf("Enter value to be searched: ");
+        scanf("%d",&val);
+        search(val);
+        break;
+
+        case 6:
+        display();
+        break;
+
+        case 7:
+        printf("Exiting...");
+        break;
+
+        default:
+        printf("Invalid choice..");
+    }
 }
+}
+
