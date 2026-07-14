@@ -1,45 +1,74 @@
-# Data Structures in C
+# 📚 Data Structures in C
 
-This repository contains my implementations of fundamental **Data Structures in C** as part of my learning and engineering coursework. The programs are written with a focus on understanding the core concepts and operations of each data structure.
+A comprehensive collection of **Data Structures** implemented in **C**, created as part of my engineering coursework and self-learning journey. This repository focuses on understanding the internal working of each data structure by implementing them from scratch without relying on external libraries.
 
-## 📌 Current Progress
+---
 
-### ✅ Array Implementation
+## 📂 Repository Structure
 
-* Array Traversal
-* Insertion
-* Deletion
-* Searching
+```
+data_structures/
+│
+├── LINEAR_DATASTRUCTURES/
+│   ├── lists/
+│   │   ├── array_list.c
+│   │   ├── singly_linkedlist.c
+│   │   └── circularly_linkedlist.c
+│   │
+│   ├── stacks/
+│   │   └── (Coming Soon)
+│   │
+│   └── queues/
+│       └── (Coming Soon)
+│
+├── README.md
+└── LICENSE
+```
 
-### ✅ Linked List Implementation
+---
 
-* Singly Linked List
-* Circular Linked List
-* Insertion Operations
-* Deletion Operations
-* Display/Traversal
+## 🚀 Implemented Data Structures
 
-## 🛠️ Language & Tools
+### 📌 Linear Data Structures
 
-* **Language:** C
-* **Compiler:** GCC / MinGW
-* **IDE:** Visual Studio Code
+#### ✅ Lists
 
-## ▶️ How to Run
+- Array
+  - Traversal
+  - Insertion
+  - Deletion
+  - Searching
 
-Compile the program:
+- Singly Linked List
+  - Insertion
+  - Deletion
+  - Traversal
+
+- Circular Linked List
+  - Insertion
+  - Deletion
+  - Traversal
+
+---
+
+## 🛠 Tech Stack
+
+- **Language:** C
+- **Compiler:** GCC / MinGW
+- **IDE:** Visual Studio Code
+- **Version Control:** Git & GitHub
+
+---
+
+## ▶️ Compilation
+
+Compile any source file using GCC:
 
 ```bash
 gcc filename.c -o output
 ```
 
-Run the executable:
-
-**Linux/macOS**
-
-```bash
-./output
-```
+### Run the Program
 
 **Windows**
 
@@ -47,19 +76,57 @@ Run the executable:
 output.exe
 ```
 
-## 🚀 Upcoming Implementations
+**Linux/macOS**
 
-* Stack
-* Queue
-* Tree
-* Graph
-* Searching Algorithms
-* Sorting Algorithms
+```bash
+./output
+```
 
-## 🎯 Purpose
+---
 
-This repository documents my progress in learning Data Structures by implementing each concept from scratch in C.
+## 📅 Roadmap
+
+### 🔄 Linear Data Structures
+
+- ✅ Arrays
+- ✅ Singly Linked List
+- ✅ Circular Linked List
+- ⏳ Doubly Linked List
+- ⏳ Stack
+- ⏳ Queue
+
+### 🌳 Non-Linear Data Structures
+
+- ⏳ Trees
+- ⏳ Binary Search Trees
+- ⏳ AVL Trees
+- ⏳ Graphs
+- ⏳ Heaps
+
+### 🔍 Algorithms
+
+- ⏳ Searching Algorithms
+- ⏳ Sorting Algorithms
+
+---
+
+## 🎯 Objectives
+
+- Learn every Data Structure from scratch.
+- Understand memory management and pointers in C.
+- Practice clean and modular programming.
+- Build a structured reference repository for future learning.
+
+---
+
+## 🤝 Contributions
+
+Suggestions and improvements are always welcome. Feel free to fork the repository and create a pull request.
+
+---
 
 ## 👨‍💻 Author
 
 **Sudharsan M.S.**
+
+⭐ If you found this repository useful, consider giving it a **Star** on GitHub!
