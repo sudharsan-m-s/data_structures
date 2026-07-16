@@ -42,6 +42,30 @@ void insfirst(int val)
     printf("\n");
 }
 
+void inslast(int val)
+{
+    struct Node *newnode = malloc(sizeof(struct Node));
+    newnode -> data = val;
+    struct Node *temp = head -> next;
+    if (temp == NULL)
+    {
+        head -> next = newnode;
+        newnode -> prev = head;
+        newnode -> next = NULL;
+    }
+    else{
+        while(temp -> next != NULL)
+        {
+            temp = temp -> next;
+        }
+        newnode -> next = NULL;
+        newnode -> prev = temp;
+        temp -> next = newnode;
+    }
+    display();
+    printf("\n");
+}
+
 int main()
 {
     head = malloc(sizeof(struct Node));
@@ -50,4 +74,6 @@ int main()
     insfirst(5);
     insfirst(4);
     insfirst(3);
+    inslast(6);
+    inslast(7);
 }
