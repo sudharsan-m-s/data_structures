@@ -4,11 +4,11 @@
 struct Node {
     int data;
     struct Node *next, *prev;
-}*first ;
+}*head ;
 
 void display()
 {
-    struct Node *temp = first;
+    struct Node *temp = head -> next;
     while (temp != NULL)
     {
         printf("%d",temp->data);
@@ -21,15 +21,33 @@ void display()
     printf("\n");
 }
 
+void insfirst(int val)
+{
+    struct Node *newnode = malloc(sizeof(struct Node));
+    newnode -> data = val;
+    struct Node *temp = head -> next;
+    if (temp == NULL)
+    {
+        head -> next = newnode;
+        newnode -> prev = head;
+        newnode -> next = NULL;
+    }
+    else{
+        newnode -> next = head ->next;
+        temp -> prev = newnode ;
+        newnode -> prev = head;
+        head -> next = newnode;
+    }
+    display();
+    printf("\n");
+}
+
 int main()
 {
-    first = malloc(sizeof(struct Node));
-    first -> data = 10;
-    first -> prev = NULL;
-    struct Node *second = malloc(sizeof(struct Node));
-    first -> next = second;
-    second -> prev = first;
-    second -> data = 20;
-    second -> next = NULL;
-    display();
+    head = malloc(sizeof(struct Node));
+    head -> next =NULL;
+    head -> prev =NULL;
+    insfirst(5);
+    insfirst(4);
+    insfirst(3);
 }
