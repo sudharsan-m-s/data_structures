@@ -35,7 +35,7 @@ The goal is to strengthen problem-solving skills, understand memory management, 
 │   │   ├── 📄 array_list.c
 │   │   ├── 📄 singly_linkedlist.c
 │   │   ├── 📄 circularly_linkedlist.c
-│   │   └── 📄 doubly_linkedlist.c (Coming Soon)
+│   │   └── 📄 doubly_linkedlist.c
 │   │
 │   ├── 📁 stacks
 │   │   └── 🚧 Under Development
@@ -83,7 +83,7 @@ The goal is to strengthen problem-solving skills, understand memory management, 
 | ✅ Arrays | Completed |
 | ✅ Singly Linked List | Completed |
 | ✅ Circular Linked List | Completed |
-| 🟡 Doubly Linked List | In Progress |
+| 🟡 Doubly Linked List | On Progress |
 | 🔜 Stack | Planned |
 | 🔜 Queue | Planned |
 | 🔜 Tree | Planned |
