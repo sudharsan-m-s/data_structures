@@ -66,6 +66,38 @@ void inslast(int val)
     printf("\n");
 }
 
+void insspecific(int s, int val)
+{
+    struct Node *newnode = malloc(sizeof(struct Node));
+    newnode -> data = val;
+    struct Node *temp = head -> next;
+    if (temp == NULL)
+    {
+        printf("Empty is list");
+        free(newnode);
+    }else{
+        while(temp-> next != NULL && temp -> data != s)
+        {
+            temp = temp -> next;
+        }
+        if(temp->data == s)
+        {
+            newnode -> next = temp -> next;
+            newnode -> prev = temp;
+            if (temp->next != NULL)
+            {
+            temp->next->prev = newnode;
+            }
+            temp -> next = newnode;
+            display(); 
+        }
+        else{
+            printf("Element not found!");
+            free(newnode);
+        }
+    }
+}
+
 int main()
 {
     head = malloc(sizeof(struct Node));
@@ -76,4 +108,5 @@ int main()
     insfirst(3);
     inslast(6);
     inslast(7);
+    insspecific(3,8);
 }
