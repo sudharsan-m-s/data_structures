@@ -149,14 +149,60 @@ void search (int val)
 int main()
 {
     head = malloc(sizeof(struct Node));
-    head -> next =NULL;
-    head -> prev =NULL;
-    insfirst(5);
-    insfirst(4);
-    insfirst(3);
-    inslast(6);
-    inslast(7);
-    insspecific(3,8);
-    del(3);
-    search(5);
+    head -> prev = NULL;
+    head -> next = NULL;
+    int choice = 0, s, val;
+    while(choice != 7)
+    {
+        printf("\n1.Insert First\n2.Insert Last\n3.Insert After Specified Element\n4.Delete\n5.Search\n6.Display\n7.Exit\n");
+        printf("Enter your choice : ");
+        scanf("%d",&choice);
+        switch(choice)
+        {
+            case 1:
+            printf("Enter value to be inserted: ");
+            scanf("%d",&val);
+            insfirst(val);
+            break;
+
+            case 2:
+            printf("Enter value to be inserted: ");
+            scanf("%d",&val);
+            inslast(val);
+            break;
+
+            case 3:
+            printf("Enter the searching element: ");
+            scanf("%d",&s);
+            printf("Enter value to be inserted: ");
+            scanf("%d",&val);
+            insspecific(s,val);
+            break;
+
+            case 4:
+            printf("Enter the element to be deleted: ");
+            scanf("%d",&val);
+            del(val);
+            break;
+
+            case 5:
+            printf("Enter the element to be searched: ");
+            scanf("%d",&val);
+            search(val);
+            break;
+
+            case 6:
+            printf("Doubly-Linked List :");
+            display();
+            break;
+
+            case 7:
+            printf("Exiting...");
+            break;
+
+            default :
+            printf("Invalid Choice");
+
+        }
+    }
 }
