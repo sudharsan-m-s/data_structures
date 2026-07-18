@@ -80,7 +80,7 @@ void insspecific(int s, int val)
         {
             temp = temp -> next;
         }
-        if(temp->data == s)
+        if(temp != NULL)
         {
             newnode -> next = temp -> next;
             newnode -> prev = temp;
@@ -89,7 +89,8 @@ void insspecific(int s, int val)
             temp->next->prev = newnode;
             }
             temp -> next = newnode;
-            display(); 
+            display();
+            printf("\n"); 
         }
         else{
             printf("Element not found!");
@@ -98,6 +99,53 @@ void insspecific(int s, int val)
     }
 }
 
+void del(int val)
+{
+    struct Node *temp = head -> next;
+    if (temp == NULL)
+    {
+        printf("Empty list!");
+    }else {
+    while(temp != NULL && temp-> data != val)
+    {
+        temp = temp-> next;
+    }
+    if(temp != NULL)
+    {
+        temp -> prev -> next = temp -> next;
+        if (temp-> next != NULL)
+        {
+            temp -> next -> prev = temp -> prev;
+        }
+        free(temp);
+        display();
+        printf("\n");
+    }
+    else{
+        printf("Element not found");
+    }
+}
+}
+
+void search (int val)
+{
+    struct Node *temp = head -> next;
+    if(temp == NULL)
+    {
+        printf("List is empty");
+    }else{
+    while(temp!= NULL && temp-> data != val)
+    {
+        temp = temp -> next;
+    }
+    if(temp!=NULL)
+    {
+        printf("The element %d found!",val);
+    }else{
+        printf("Element not found");
+    }
+}
+}
 int main()
 {
     head = malloc(sizeof(struct Node));
@@ -109,4 +157,6 @@ int main()
     inslast(6);
     inslast(7);
     insspecific(3,8);
+    del(3);
+    search(5);
 }
