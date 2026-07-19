@@ -69,7 +69,7 @@ void inslast(int val)
     printf("\n");
 }
 
-int main()
+void circularly_linked()
 {
     head = malloc(sizeof(struct Node));
     struct Node *first = malloc(sizeof(struct Node));

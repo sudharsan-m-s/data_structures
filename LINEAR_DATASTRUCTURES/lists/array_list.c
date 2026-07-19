@@ -81,7 +81,7 @@ void display() {
     printf("\n");
 }
 
-int main() {
+void array_list() {
     int choice = 0, pos, value;
 
     while (choice != 5) {

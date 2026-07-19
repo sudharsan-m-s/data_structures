@@ -96,7 +96,7 @@ void search(int val)
 }
 
 
-int main() {
+void singly_linked() {
     int choice = 0, s , val;
     //linkedlist declaration
     head = (struct Node*)malloc(sizeof(struct Node));

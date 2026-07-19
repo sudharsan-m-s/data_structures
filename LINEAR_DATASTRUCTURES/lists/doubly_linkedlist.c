@@ -3,7 +3,8 @@
 
 struct Node {
     int data;
-    struct Node *next, *prev;
+    struct Node *next; 
+    struct Node *prev;
 }*head ;
 
 void display()
@@ -146,7 +147,7 @@ void search (int val)
     }
 }
 }
-int main()
+void doubly_linked()
 {
     head = malloc(sizeof(struct Node));
     head -> prev = NULL;
@@ -192,7 +193,7 @@ int main()
             break;
 
             case 6:
-            printf("Doubly-Linked List :");
+            printf("Doubly-Linked List : ");
             display();
             break;
 
