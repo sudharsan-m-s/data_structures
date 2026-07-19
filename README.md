@@ -4,7 +4,6 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00C2FF&center=true&vCenter=true&width=900&lines=Mastering+Data+Structures+using+C;Arrays+%7C+Linked+Lists+%7C+Stacks+%7C+Queues;Building+Strong+Programming+Fundamentals;Learning+One+Concept+at+a+Time"/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C2FF,100:0066FF&height=180&section=header"/>
 
 ![Language](https://img.shields.io/badge/Language-C-blue?style=for-the-badge&logo=c)
 ![Compiler](https://img.shields.io/badge/Compiler-GCC-success?style=for-the-badge)
