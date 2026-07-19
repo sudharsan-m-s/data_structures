@@ -6,7 +6,7 @@ struct Node{
     struct Node *next;
 }*head;
 
-void display()
+void cll_display()
 {
     struct Node *temp = head ->next;
     if (temp == NULL)
@@ -25,7 +25,7 @@ printf("(back to %d)\n",temp->data);
 printf("\n");
 }
 
-void insfirst(int val)
+void cll_insfirst(int val)
 {
     struct Node *newnode = malloc(sizeof(struct Node));
     newnode -> data = val;
@@ -48,7 +48,7 @@ void insfirst(int val)
     display();
 }
 
-void inslast(int val)
+void cll_inslast(int val)
 {
     struct Node *newnode = malloc(sizeof(struct Node));
     newnode -> data = val;
@@ -82,7 +82,7 @@ void circularly_linked()
     third -> data = 30;
     second -> next = third;
     third -> next = first;
-    display();
-    insfirst(5);
-    inslast(100);
+    cll_display();
+    cll_insfirst(5);
+    cll_inslast(100);
 }

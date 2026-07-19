@@ -7,7 +7,7 @@ struct Node {
     struct Node *prev;
 }*head ;
 
-void display()
+void dll_display()
 {
     struct Node *temp = head -> next;
     while (temp != NULL)
@@ -22,7 +22,7 @@ void display()
     printf("\n");
 }
 
-void insfirst(int val)
+void dll_insfirst(int val)
 {
     struct Node *newnode = malloc(sizeof(struct Node));
     newnode -> data = val;
@@ -43,7 +43,7 @@ void insfirst(int val)
     printf("\n");
 }
 
-void inslast(int val)
+void dll_inslast(int val)
 {
     struct Node *newnode = malloc(sizeof(struct Node));
     newnode -> data = val;
@@ -67,7 +67,7 @@ void inslast(int val)
     printf("\n");
 }
 
-void insspecific(int s, int val)
+void dll_insspecific(int s, int val)
 {
     struct Node *newnode = malloc(sizeof(struct Node));
     newnode -> data = val;
@@ -100,7 +100,7 @@ void insspecific(int s, int val)
     }
 }
 
-void del(int val)
+void dll_del(int val)
 {
     struct Node *temp = head -> next;
     if (temp == NULL)
@@ -128,7 +128,7 @@ void del(int val)
 }
 }
 
-void search (int val)
+void dll_search (int val)
 {
     struct Node *temp = head -> next;
     if(temp == NULL)
@@ -147,7 +147,7 @@ void search (int val)
     }
 }
 }
-void doubly_linked()
+void dll_doubly_linked()
 {
     head = malloc(sizeof(struct Node));
     head -> prev = NULL;
@@ -163,13 +163,13 @@ void doubly_linked()
             case 1:
             printf("Enter value to be inserted: ");
             scanf("%d",&val);
-            insfirst(val);
+            dll_insfirst(val);
             break;
 
             case 2:
             printf("Enter value to be inserted: ");
             scanf("%d",&val);
-            inslast(val);
+            dll_inslast(val);
             break;
 
             case 3:
@@ -177,24 +177,24 @@ void doubly_linked()
             scanf("%d",&s);
             printf("Enter value to be inserted: ");
             scanf("%d",&val);
-            insspecific(s,val);
+            dll_insspecific(s,val);
             break;
 
             case 4:
             printf("Enter the element to be deleted: ");
             scanf("%d",&val);
-            del(val);
+            dll_del(val);
             break;
 
             case 5:
             printf("Enter the element to be searched: ");
             scanf("%d",&val);
-            search(val);
+            dll_search(val);
             break;
 
             case 6:
             printf("Doubly-Linked List : ");
-            display();
+            dll_display();
             break;
 
             case 7:

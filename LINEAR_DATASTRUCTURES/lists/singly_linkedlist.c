@@ -7,7 +7,7 @@ struct Node {
 }
 *head;
 
-void display()
+void sll_display()
 {
     struct Node* temp = head -> next;
     while (temp != NULL)
@@ -22,7 +22,7 @@ void display()
 printf("\n");
 }
 
-void insfirst(int val)
+void sll_insfirst(int val)
 {
     struct Node* newnode = malloc(sizeof(struct Node));
     newnode ->data =  val;
@@ -31,7 +31,7 @@ void insfirst(int val)
     display();
 }
 
-void inslast(int val)
+void sll_inslast(int val)
 {
     struct Node* newnode =  malloc(sizeof(struct Node));
     newnode -> data = val;
@@ -44,7 +44,7 @@ void inslast(int val)
     display();
 }
 
-void insspecific(int s,int val)
+void sll_insspecific(int s,int val)
 {
     struct Node* newnode = malloc(sizeof(struct Node));
     newnode ->data = val;
@@ -64,7 +64,7 @@ void insspecific(int s,int val)
     display();
 }
 
-void del(int val)
+void sll_del(int val)
 {
     struct Node* temp = head-> next, *prev;
     while(temp->data != val && temp->next != NULL)
@@ -82,7 +82,7 @@ void del(int val)
     display();
 }
 
-void search(int val)
+void sll_search(int val)
 {
     struct Node* temp = head -> next;
     while(temp->data != val && temp->next != NULL){
@@ -122,13 +122,13 @@ void singly_linked() {
         case 1:
         printf("Enter value to be inserted: ");
         scanf("%d",&val);
-        insfirst(val);
+        sll_insfirst(val);
         break;
 
         case 2:
         printf("Enter value to be inserted: ");
         scanf("%d",&val);
-        inslast(val);
+        sll_inslast(val);
         break;
 
         case 3:
@@ -136,24 +136,24 @@ void singly_linked() {
         scanf("%d",&s);
         printf("Enter value to be inserted: ");
         scanf("%d",&val);
-        insspecific(s,val);
+        sll_insspecific(s,val);
         break;
 
         case 4:
         printf("Enter value to be deleted: ");
         scanf("%d",&val);
-        del(val);
+        sll_del(val);
 
         break;
 
         case 5:
         printf("Enter value to be searched: ");
         scanf("%d",&val);
-        search(val);
+        sll_search(val);
         break;
 
         case 6:
-        display();
+        sll_display();
         break;
 
         case 7:

@@ -3,7 +3,7 @@
 int n = 5, size = 6;
 int array[6] = {1, 2, 3, 4, 5};
 
-void insert(int pos, int value) {
+void a_insert(int pos, int value) {
     int i;
 
     if (n < size && pos <= n) 
@@ -20,7 +20,7 @@ void insert(int pos, int value) {
     }
 }
 
-void delete(int value) {
+void a_delete(int value) {
     int i, pos = -1;
 
     if (n == 0) {
@@ -49,7 +49,7 @@ void delete(int value) {
     n--;
 }
 
-void search(int value) {
+void a_search(int value) {
     int i;
 
     if (n == 0) {
@@ -67,7 +67,7 @@ void search(int value) {
     printf("Element not found\n");
 }
 
-void display() {
+void a_display() {
     int i;
 
     if (n == 0) {
@@ -93,23 +93,23 @@ void array_list() {
             case 1:
                 printf("Enter position and value: ");
                 scanf("%d%d", &pos, &value);
-                insert(pos, value);
+                a_insert(pos, value);
                 break;
 
             case 2:
                 printf("Enter value to delete: ");
                 scanf("%d", &value);
-                delete(value);
+                a_delete(value);
                 break;
 
             case 3:
                 printf("Enter value to search: ");
                 scanf("%d", &value);
-                search(value);
+                a_search(value);
                 break;
 
             case 4:
-                display();
+                a_display();
                 break;
 
             case 5:
